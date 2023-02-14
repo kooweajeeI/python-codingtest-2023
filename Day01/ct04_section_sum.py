@@ -14,3 +14,4 @@ for i in numbers:
 for i in range(M):
     x, y = map(int, input().split())
     print(sums[y] - sums[x-1])
+1
