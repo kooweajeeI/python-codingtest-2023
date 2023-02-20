@@ -41,6 +41,26 @@
 
 ## 6일차
 1. 코딩테스트 학습
+    - 자료구조
+        - deque
+
     - 코딩테스트 알고리즘
         - 백준
         - 프로그래머스
+
+```python
+# 백준 2750 - 수 정렬하기
+N = int(input())
+A = [0] * N
+
+for i in range(N):
+    A[i] = int(input())
+
+for i in range(N-1):
+    for j in range(N-1-i):
+        if A[j] > A[j+1]:
+            A[j], A[j+1] = A[j+1], A[j]
+
+for i in range(N):
+    print(A[i])
+```
